@@ -25,7 +25,7 @@ jobs:
         rfbrowser init
     - name: run robot framework tests
       run: |
-        robot --outputdir results tests
+        robot --outputdir results Playwright-page-methods
     - name: upload results
       if: '!cancelled()'
       uses: actions/upload-artifact@v4
