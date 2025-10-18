@@ -1,0 +1,6 @@
+robotframework==7.*
+robotframework-tidy==4.*
+robotframework-browser==19.8.0
+ipython==8.*
+pyyaml==6.*
+beautifulsoup4==4.12.3
