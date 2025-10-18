@@ -4,7 +4,7 @@ Library     Browser    jsextension=${CURDIR}/playwright_page_method.js
 
 *** Test Cases ***
 Native Playwright
-    New Browser    headless=False
+    New Browser    headless=True
     New Context    viewport={'width': 1280, 'height': 720}
     New Page    https://playwright.dev
     ${btn_txt}    Playwright Page Method    getByRole('link', { name: 'Get started' }).innerText()
@@ -17,7 +17,7 @@ Native Playwright
     Sleep    3s
 
 Playwright Assertions
-    New Browser    headless=False
+    New Browser    headless=True
     New Context    viewport={'width': 1800, 'height': 720}
     New Page
     #    Navigate to the page
